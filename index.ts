@@ -6,25 +6,34 @@ var parent:any;
 parent = "myString";
 parent = 500;
 
-var nameArray:string[] = [];
+//initialize array
+var nameArray:string[] = []; 
 var otherArray = new Array(10);
 
+//push() method appends the given element(s) in the last of the array and 
+//returns the length of the new array.
 nameArray.push("myName");
 otherArray.push("newName")
 
+
+//An enum is a special "class" that represents a group of constants (unchangeable variables).
+//Enums come in two flavors string and numeric.
 export enum Days {
     Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 }
 
+//Interfaces define properties, methods, and events, which are the members of the interface.
 interface Plane {
     name:string
     model:string
     fly?: (destination:string) => string
 }
 
+//function creation
 function addPlane2(data:Plane) {
 }
 
+//list of plane
 var planeList:Plane[] = [];
 export const addPlane = (data:Plane) => {
     planeList.push(data)

@@ -8,10 +8,15 @@ exports.testFunction = testFunction;
 var parent;
 parent = "myString";
 parent = 500;
+//initialize array
 var nameArray = [];
 var otherArray = new Array(10);
+//push() method appends the given element(s) in the last of the array and 
+//returns the length of the new array.
 nameArray.push("myName");
 otherArray.push("newName");
+//An enum is a special "class" that represents a group of constants (unchangeable variables).
+//Enums come in two flavors string and numeric.
 var Days;
 (function (Days) {
     Days[Days["Monday"] = 0] = "Monday";
@@ -22,8 +27,10 @@ var Days;
     Days[Days["Saturday"] = 5] = "Saturday";
     Days[Days["Sunday"] = 6] = "Sunday";
 })(Days = exports.Days || (exports.Days = {}));
+//function creation
 function addPlane2(data) {
 }
+//list of plane
 var planeList = [];
 const addPlane = (data) => {
     planeList.push(data);
